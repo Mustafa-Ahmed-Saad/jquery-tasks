@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="all.min.css" />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <!-- links navbar -->
+      <ul class="navbar">
+         <li><a href="#" data-scrollto="Home">Home</a></li>
+         <li><a href="#" data-scrollto="About-Us">About Us</a></li>
+         <li><a href="#" data-scrollto="Services">Services</a></li>
+         <li><a href="#" data-scrollto="Solution">Solution</a></li>
+         <li><a href="#" data-scrollto="products">products</a></li>
+         <li><a href="#" data-scrollto="Contact-Us">Contact Us</a></li>
+      </ul>
+
+      <!-- fixed menu -->
+      <div class="fixed-menu">
+         <i class="fas fa-cog fa-lg"></i>
+         <h3>Change Color</h3>
+         <ul class="change-colors">
+            <li data-color="blue"></li>
+            <li data-color="red"></li>
+            <li data-color="green"></li>
+            <li data-color="purple"></li>
+         </ul>
+      </div>
+
+      <!-- all sections -->
+      <div class="block" id="Home">
+         <h2 class="skin-background">Home</h2>
+         <span class="show-popup">show popup</span>
+         <!-- start button with effect -->
+         <div class="buttons-effects">
+            <button class="buttons-effect from-left">
+               <span></span>
+               <span>from left</span>
+            </button>
+            <button class="buttons-effect from-top">
+               <span></span>
+               <span>from top</span>
+            </button>
+            <button class="buttons-effect border-left">
+               <span></span>
+               <span>border from left</span>
+            </button>
+            <button class="buttons-effect border-top">
+               <span></span>
+               <span>border from top</span>
+            </button>
+         </div>
+
+         <!-- start error-message -->
+         <button class="btn-error">error message</button>
+         <div class="error-message">
+            this is error message
+         </div>
+
+         <!-- progress bar -->
+         <div class="animated-progress">
+            <span data-progress="70"></span>
+         </div>
+
+         <div class="buttons-effects">
+            <button class="buttons-effect bounce">
+               bounce
+            </button>
+         </div>
+         <!-- bounce button effects -->
+         <!-- start gallery -->
+         <div class="gallery">
+            <div class="master-img">
+               <i class="skin-background fas fa-chevron-left fa-lg"></i>
+               <i class="skin-background fas fa-chevron-right fa-lg"></i>
+               <img src="img/01.jpg" alt="" />
+            </div>
+            <div class="thumbnails">
+               <img class="selected" src="img/01.jpg" alt="" />
+               <img src="img/02.jpg" alt="" />
+               <img src="img/03.jpg" alt="" />
+               <img src="img/04.jpg" alt="" />
+               <img src="img/05.jpg" alt="" />
+            </div>
+         </div>
+
+         <!-- start products -->
+         <div class="products">
+            <div class="product">
+               <h3>Product One</h3>
+               <span class="date">25/4/2017</span>
+               <img src="img/pexels-dominika-roseclay-2682877.jpg" alt="" />
+               <i class="fas fa-plus"></i>
+               <p class="description">this is test description</p>
+            </div>
+            <div class="product">
+               <h3>Product Two</h3>
+               <span class="date">25/4/2017</span>
+               <img src="img/pexels-jess-vide-4321944.jpg" alt="" />
+               <i class="fas fa-plus"></i>
+               <p class="description">this is test description</p>
+            </div>
+         </div>
+
+         <!-- start same height divs -->
+         <div class="container same-height">
+            <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at architecto quae libero beatae, perspiciatis adipisci exercitationem iure deserunt maxime.</div>
+            <div class="two">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, delectus repudiandae. Tempora dignissimos facere amet debitis, aliquid odit. Itaque asperiores ab assumenda cum, repellat fuga facere quibusdam ullam in dicta.</div>
+            <div class="three">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est pariatur eius saepe mollitia atque, totam consequuntur aut corporis deleniti doloribus.</div>
+         </div>
+      </div>
+
+         <!-- start grid/list products -->
+         <div class="items list-view">
+            <div class="view-options">
+               <i class="active fas fa-th-list fa-2x" data-class="list-view"></i>
+               <i class="fas fa-th-large fa-2x" data-class="grid-view"></i>
+            </div>
+            <div class="item">
+               <h3>item One</h3>
+               <span class="date">25/4/2017</span>
+               <img src="img/pexels-dominika-roseclay-2682877.jpg" alt="" />
+               <i class="fas fa-plus"></i>
+               <p class="description">this is test description</p>
+            </div>
+            <div class="item">
+               <h3>item Two</h3>
+               <span class="date">25/4/2017</span>
+               <img src="img/pexels-jess-vide-4321944.jpg" alt="" />
+               <i class="fas fa-plus"></i>
+               <p class="description">this is test description</p>
+            </div>
+         </div>
+
+         <!-- staart our form -->
+         <div class="our-form">
+            <form>
+               <div>
+                  <input class="detect-unicode" type="text" required='required' placeholder="type your name">
+                  <span class="the-message">please fill this field</span>
+                  <div class="unicode"></div>
+               </div>
+               <div>
+                  <input class="auto-direction" type="email" required='required' placeholder="type your email">
+                  <span class="the-message">please fill this field</span>
+               </div>
+               <div>
+                  <input type="password" required='required' placeholder="type your password">
+                  <span class="the-message">please fill this field</span>
+               </div>
+               <div>
+                  <textarea placeholder="type your message" required='required' cols="30" rows="10"></textarea>
+                  <span class="the-message">please fill this field</span>
+               </div>
+               <div>
+                  <input class="add-tag" type="text" placeholder="please type tags ten press [,]">
+                  <div class="tags"></div>
+               </div>
+               <div>
+                  <input type="file">
+               </div>
+               <input type="submit" value="send">
+            </form>
+            <hr>
+            <h3>unicode of caracter (English)</h3>
+            <div class="english"></div>
+            <hr>
+            <h3>unicode of caracter (Arabic)</h3>
+            <div class="arabic"></div>
+            <hr>
+         </div>
+         <br>
+         <br>
+         <!-- start trimed text -->
+         <div class="trimmed-texts">
+            <p class="p-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos exercitationem voluptas! Voluptatem doloribus amet architecto, assumenda aliquam mollitia dolore!</p>
+            <p class="p-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos exercitationem voluptas! Voluptatem doloribus amet architecto, assumenda aliquam mollitia dolore!</p>
+         </div>
+         <br>
+         <br>
+
+         <!-- start shuffling cards -->
+         <div class="container">
+            <div class="cards">
+               <div class="card card-one"></div>
+               <div class="card card-two"></div>
+               <div class="card card-three"></div>
+               <div class="card card-four"></div>
+               <div class="card card-five"></div>
+               <div class="card card-sex"></div>
+               <div class="card card-seven"></div>
+               <div class="card card-eight"></div>
+            </div>
+         </div>
+
+         <!-- start blink warning -->
+         <div class="container">
+            <h3 class="blink-warning">this is warning</h3>
+
+         </div>
+
+         <!-- start to do list -->
+         <div class="container">
+            <div class="todo-list">
+               <h3>ToDo list</h3>
+               <ul class="tasks">
+                  <li>finishing python course</li>
+                  <li>learning react hoocks</li>
+                  <li>call my frind</li>
+               </ul>
+               <form class="add-task" method="post">
+                  <input class="task-input" type="text" name="task" placeholder="add new task" >
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <!-- start type writing effect -->
+      <div class="container" style="width: 600px; margin: auto; padding: 10px; background-color: #ccccff;">
+         <p class="typer" data-text= 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'></p>
+      </div>
+
+      <!-- start summary table -->
+      <div class="container" style="width: 400px; margin: auto;">
+         <table class="summary">
+            <tr>
+               <td>Name</td>
+               <td>Vlue</td>
+               <td>Price</td>
+            </tr>
+            <tr>
+               <td>Data One</td>
+               <td>10 Items</td>
+               <td class="price">100</td>
+            </tr>
+            <tr>
+               <td>Data Two</td>
+               <td>5 Items</td>
+               <td class="price">80</td>
+            </tr>
+            <tr>
+               <td>Data Three</td>
+               <td>1 Items</td>
+               <td class="price">20</td>
+            </tr>
+            <tr>
+               <td>Data Four</td>
+               <td>20 Items</td>
+               <td class="price">200</td>
+            </tr>
+            <tr>
+               <td>Data Five</td>
+               <td>2 Items</td>
+               <td class="price">28</td>
+            </tr>
+            <tr>
+               <td colspan='2'>Total:</td>
+               <td class="the-total"></td>
+            </tr>
+         </table>
+      </div>
+
+      <div class="block" id="About-Us"><h2 class="skin-color">about us</h2></div>
+      <div class="block" id="Services"><h2>Services</h2></div>
+      <div class="block" id="Solution"><h2>Solution</h2></div>
+      <div class="block" id="products"><h2>products</h2></div>
+      <div class="block" id="Contact-Us"><h2>Contact-Us</h2></div>
+
+      <!-- scroll to top -->
+      <a class="scroll-to-top" href="#">^</a>
+
+      <!-- start popup -->
+      <div class="popup">
+         <div class="inner">
+            <h2>this is popup</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nisi officiis est voluptates, similique culpa accusamus sequi labore sunt quo?</p>
+            <button class="close">Close</button>
+         </div>
+      </div>
+
+      <script src="jquery-main.js"></script>
+      <script src="my-js.js"></script>
+   </body>
+</html>

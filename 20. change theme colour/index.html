@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="all.min.css" />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <!-- links navbar -->
+      <ul class="navbar">
+         <li><a href="#" data-scrollto="Home">Home</a></li>
+         <li><a href="#" data-scrollto="About-Us">About Us</a></li>
+         <li><a href="#" data-scrollto="Services">Services</a></li>
+         <li><a href="#" data-scrollto="Solution">Solution</a></li>
+         <li><a href="#" data-scrollto="products">products</a></li>
+         <li><a href="#" data-scrollto="Contact-Us">Contact Us</a></li>
+      </ul>
+
+      <!-- fixed menu -->
+      <div class="fixed-menu">
+         <i class="fas fa-cog fa-lg"></i>
+         <h3>Change Color</h3>
+         <ul class="change-colors">
+            <li data-color="blue"></li>
+            <li data-color="red"></li>
+            <li data-color="green"></li>
+            <li data-color="purple"></li>
+         </ul>
+      </div>
+
+      <!-- all sections -->
+      <div class="block" id="Home" style="height: 500px">
+         <h2 class="skin-background">Home</h2>
+         <span class="show-popup">show popup</span>
+         <!-- start button with effect -->
+         <div class="buttons-effects">
+            <button class="buttons-effect from-left">
+               <span></span>
+               <span>from left</span>
+            </button>
+            <button class="buttons-effect from-top">
+               <span></span>
+               <span>from top</span>
+            </button>
+            <button class="buttons-effect border-left">
+               <span></span>
+               <span>from border from left</span>
+            </button>
+            <button class="buttons-effect border-top">
+               <span></span>
+               <span>from border from top</span>
+            </button>
+         </div>
+
+         <!-- progress bar -->
+         <div class="animated-progress">
+            <span data-progress="70"></span>
+         </div>
+      </div>
+      <div class="block" id="About-Us" style="height: 500px"><h2 class="skin-color">about us</h2></div>
+      <div class="block" id="Services" style="height: 500px"><h2>Services</h2></div>
+      <div class="block" id="Solution" style="height: 500px"><h2>Solution</h2></div>
+      <div class="block" id="products" style="height: 500px"><h2>products</h2></div>
+      <div class="block" id="Contact-Us" style="height: 500px"><h2>Contact-Us</h2></div>
+
+      <!-- scroll to top -->
+      <a class="scroll-to-top" href="#">^</a>
+
+      <!-- start popup -->
+      <div class="popup">
+         <div class="inner">
+            <h2>this is popup</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nisi officiis est voluptates, similique culpa accusamus sequi labore sunt quo?</p>
+            <button class="close">Close</button>
+         </div>
+      </div>
+
+      <script src="jquery-main.js"></script>
+      <script src="my-js.js"></script>
+   </body>
+</html>

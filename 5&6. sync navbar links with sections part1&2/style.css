@@ -1,0 +1,44 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-size: Tahoma, Arial;
+}
+
+ul.navbar {
+   background-color: rgba(0, 0, 0, 0.7);
+   list-style: none;
+   padding: 15px;
+   overflow: hidden;
+   margin-left: auto;
+   text-align: center;
+
+   /* or
+   you can move li to right by give li display: inline-block and give ul text align right when you dont need to give any width to ul
+   */
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+ul.navbar a {
+   text-decoration: none;
+   color: #fff;
+}
+ul.navbar li {
+   display: inline-block;
+   margin-right: 25px;
+}
+ul.navbar li a.active {
+   color: #ffea00;
+}
+
+.block {
+   height: 1200px;
+   background-color: #eee;
+   margin-bottom: 20px;
+   padding: 10px 0;
+   text-align: center;
+}

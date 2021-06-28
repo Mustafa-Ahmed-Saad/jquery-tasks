@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <!-- links navbar -->
+      <ul class="navbar">
+         <li><a href="#" data-scrollto="Home">Home</a></li>
+         <li><a href="#" data-scrollto="About-Us">About Us</a></li>
+         <li><a href="#" data-scrollto="Services">Services</a></li>
+         <li><a href="#" data-scrollto="Solution">Solution</a></li>
+         <li><a href="#" data-scrollto="products">products</a></li>
+         <li><a href="#" data-scrollto="Contact-Us">Contact Us</a></li>
+      </ul>
+
+      <!-- all sections -->
+      <div class="block" id="Home" style="height: 500px">
+         <h2>Home</h2>
+         <span class="show-popup">show popup</span>
+      </div>
+      <div class="block" id="About-Us" style="height: 500px"><h2>about us</h2></div>
+      <div class="block" id="Services" style="height: 500px"><h2>Services</h2></div>
+      <div class="block" id="Solution" style="height: 500px"><h2>Solution</h2></div>
+      <div class="block" id="products" style="height: 500px"><h2>products</h2></div>
+      <div class="block" id="Contact-Us" style="height: 500px"><h2>Contact-Us</h2></div>
+
+      <!-- scroll to top -->
+      <a class="scroll-to-top" href="#">^</a>
+
+      <!-- start popup -->
+      <div class="popup">
+         <div class="inner">
+            <h2>this is popup</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nisi officiis est voluptates, similique culpa accusamus sequi labore sunt quo?</p>
+            <button class="close">Close</button>
+         </div>
+      </div>
+
+      <script src="jquery-main.js"></script>
+      <script src="my-js.js"></script>
+   </body>
+</html>

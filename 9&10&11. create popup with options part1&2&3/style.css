@@ -1,0 +1,113 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-size: Tahoma, Arial;
+}
+
+/* links in navbar */
+ul.navbar {
+   background-color: rgba(0, 0, 0, 0.7);
+   list-style: none;
+   padding: 15px;
+   overflow: hidden;
+   margin-left: auto;
+   text-align: center;
+   /* or
+   you can move li to right by give li display: inline-block and give ul text align right when you dont need to give any width to ul
+   */
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+ul.navbar a {
+   text-decoration: none;
+   color: #fff;
+}
+ul.navbar li {
+   display: inline-block;
+   margin-right: 25px;
+}
+ul.navbar li a.active {
+   color: #ffea00;
+}
+
+/* all sections */
+.block {
+   height: 1200px;
+   background-color: #eee;
+   margin-bottom: 20px;
+   padding: 10px 0;
+   text-align: center;
+}
+
+/* scroll top top */
+.scroll-to-top {
+   background-color: #333;
+   color: #fff;
+   padding: 5px 12px 0;
+   position: fixed;
+   bottom: 10px;
+   right: 10px;
+   font-size: 30px;
+   border-radius: 5px;
+   display: none;
+}
+.scroll-to-top {
+   text-decoration: none;
+}
+
+/* start popup */
+.popup {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 99;
+   background-color: rgba(187, 187, 187, 0.8);
+   display: none;
+}
+.popup .inner {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   width: 300px;
+   height: 250px;
+   margin-left: -150px;
+   margin-top: -125px;
+   padding: 20px;
+   border: 1px solid #ccc;
+   background-color: #fff;
+}
+.popup .inner button {
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   padding: 2px 8px;
+   background-color: #eee;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.popup .inner p {
+   margin-top: 20px;
+   color: #747474;
+}
+
+/* show popup button */
+.show-popup {
+   cursor: pointer;
+   display: block;
+   text-align: center;
+   margin: 20px auto;
+   background-color: #fff;
+   width: 120px;
+   padding: 10px;
+   border-radius: 10px;
+   font-weight: bold;
+   color: #928440;
+}

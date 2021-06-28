@@ -1,0 +1,30 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-size: Tahoma, Arial;
+}
+
+.container-nav {
+   background-color: #333;
+}
+ul.navbar {
+   list-style: none;
+   padding: 15px;
+   overflow: hidden;
+   max-width: 430px;
+   margin-left: auto;
+   /* or
+   you can move li to right by give li display: inline-block and give ul text align right when you dont need to give any width to ul
+   */
+}
+ul.navbar a {
+   text-decoration: none;
+   color: #fff;
+}
+ul.navbar li {
+   float: left;
+   margin-right: 15px;
+}
